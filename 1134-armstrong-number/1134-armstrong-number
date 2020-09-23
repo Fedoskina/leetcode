@@ -1,0 +1,13 @@
+/**
+ * @param {number} N
+ * @return {boolean}
+ */
+const isArmstrong = function(N) {
+    const arr = N.toString().split('');
+    let summ = 0;
+    for (let i = 0; i < arr.length; i++) {
+        summ += Math.pow(arr[i], arr.length)
+    }
+    
+    return summ === N ? true : false;
+};
