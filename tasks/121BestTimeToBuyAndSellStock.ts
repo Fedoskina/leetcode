@@ -6,7 +6,9 @@
 // Return the maximum profit you can achieve from this transaction. 
 // If you cannot achieve any profit, return 0.
 
-const maxProfit = function(prices: number[]): number {
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
+const maxProfit = (prices: number[]): number => {
   let minPrice = prices[0];
   let maxDifference = 0;
   for (let i = 1; i < prices.length; i++) {
