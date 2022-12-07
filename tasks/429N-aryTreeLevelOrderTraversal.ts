@@ -10,8 +10,7 @@ const recursionLevelOrder = (root: TreeNode): number[][] => {
 
   const traverse = (node, level) => {
       if (!node) return;
-      if (!result[level]) 
-      {
+      if (!result[level]) {
         result[level] = [node.val]
       } else {
         result[level].push(node.val)
